@@ -5,11 +5,38 @@
       <acme-navbar creation-date="main.creationDate"></acme-navbar>
     </header>
 
-    <div layout="row" layout-wrap>
-      <md-card class="question-card" flex="20" ng-repeat="awesomeThing in main.awesomeThings">
+    <div layout="row">
+      <md-card
+        class="question-header"
+        flex="20"
+        ng-repeat="questionHeader in ['Animal', 'SPCA', 'Kat', 'I LOVE YOU', 'SO MUCH']"
+      >
         <md-card-content>
-          <h3 class="md-title">{{ awesomeThing.title }}</h3>
-          <p>{{ awesomeThing.description }}</p>
+          <h3
+            class="md-title"
+            layout="column"
+            layout-align="center center"
+          >
+            {{questionHeader}}
+          </h3>
+        </md-card-content>
+      </md-card>
+    </div>
+
+    <div layout="column" layout-wrap>
+      <md-card
+        class="question-card"
+        flex="20"
+        ng-repeat="awesomeThing in main.awesomeThings"
+      >
+        <md-card-content>
+          <h3
+            class="md-title"
+            layout="row"
+            layout-align="center center"
+          >
+            {{ awesomeThing.title }}
+          </h3>
         </md-card-content>
       </md-card>
     </div>
