@@ -35,7 +35,8 @@
               layout="row"
               layout-align="center center"
             >
-              {{ question.title }}
+              {{question.rank}}
+              {{ convertToPrize(question.rank) }}
             </h3>
           </md-card-content>
         </md-card>

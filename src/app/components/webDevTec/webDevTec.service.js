@@ -7,19 +7,29 @@ export class WebDevTecService {
         category: 'Animal',
         questions: [
           {
-            'title': '$100',
+            rank: 1,
+            question: 'An animal starts with C and rhymes with ow',
+            answer: 'Cow'
           },
           {
-            'title': '$200',
+            rank: 2,
+            question: 'An animal starts with C and rhymes with at',
+            answer: 'Cat'
           },
           {
-            'title': '$300',
+            rank: 3,
+            question: 'An animal starts with D and rhymes with og',
+            answer: 'Dog'
           },
           {
-            'title': '$400',
+            rank: 4,
+            question: 'An animal starts with E and ends with agle',
+            answer: 'Eagle!!'
           },
           {
-            'title': '$500',
+            rank: 5,
+            question: 'An animal starts with F and ends with ly',
+            answer: 'Fly'
           }
         ]
       },
@@ -27,79 +37,119 @@ export class WebDevTecService {
         category: 'SPCA',
         questions: [
           {
-            'title': '$100',
+            rank: 1,
+            question: 'Most beautiful employee? Hint: she loves Timmy',
+            answer: 'Kat!!! OF COURSE'
           },
           {
-            'title': '$200',
+            rank: 2,
+            question: 'Most brilliant employee? Hint: she likes purple',
+            answer: 'Kat!!! OF COURSE'
           },
           {
-            'title': '$300',
+            rank: 3,
+            question: 'Sweetest employee? Hint: she has beautiful eyes',
+            answer: 'Kat!!! OF COURSE'
           },
           {
-            'title': '$400',
+            rank: 4,
+            question: 'Most adorable employee? Hint: she loves Chinese food',
+            answer: 'Kat!!! OF COURSE'
           },
           {
-            'title': '$500',
+            rank: 5,
+            question: 'Best of the best employees? Hint: DAMN GURL',
+            answer: 'Kat!!! OF COURSE'
           }
         ]
       },
       {
-        category: 'Kat',
+        category: 'More Animals',
         questions: [
           {
-            'title': '$100',
+            rank: 1,
+            question: 'What food makes up nearly all (around 99%) of a Giant Panda’s diet?',
+            answer: 'Bamboo'
           },
           {
-            'title': '$200',
+            rank: 2,
+            question: 'True or false? Mice live for up to 10 years.',
+            answer: 'False - Captive mice live for up to 2 and a half years while wild mice only live for an average of around 4 months.'
           },
           {
-            'title': '$300',
+            rank: 3,
+            question: 'What is the largest type of ‘big cat’ in the world?',
+            answer: 'The tiger, weighing up to 300 kilograms (660 pounds).'
           },
           {
-            'title': '$400',
+            rank: 4,
+            question: 'What are female elephants called? ',
+            answer: 'Cows'
           },
           {
-            'title': '$500',
+            rank: 5,
+            question: 'True or false? Bats are mammals.',
+            answer: 'True'
           }
         ]
       },
       {
-        category: 'I LOVE YOU',
+        category: 'Lots of animals',
         questions: [
           {
-            'title': '$100',
+            rank: 1,
+            question: 'Bees are found on every continent of earth except for one, which is it?',
+            answer: 'Antarctica'
           },
           {
-            'title': '$200',
+            rank: 2,
+            question: 'True or false? Cats spend an average of 13 to 14 hours a day sleeping.',
+            answer: 'true'
           },
           {
-            'title': '$300',
+            rank: 3,
+            question: 'What is the fastest land animal in the world?',
+            answer: 'The cheetah (it can reach speeds of up to 120kph – 75mph)'
           },
           {
-            'title': '$400',
+            rank: 4,
+            question: 'A ‘doe’ is what kind of animal?',
+            answer: 'A female deer.'
           },
           {
-            'title': '$500',
+            rank: 5,
+            question: 'Groups of lions are known as what?',
+            answer: 'Prides'
           }
         ]
       },
       {
-        category: 'SO MUCH',
+        category: 'ALLL the animals',
         questions: [
           {
-            'title': '$100',
+            rank: 1,
+            question: 'Is a shark a fish or a mammal?',
+            answer: 'A fish'
           },
           {
-            'title': '$200',
+            rank: 2,
+            question: 'What is the name of an adult female horse?',
+            answer: 'A mare '
           },
           {
-            'title': '$300',
+            rank: 3,
+            question: 'True or false? Rabbits are born blind.',
+            answer: 'True'
           },
           {
-            'title': '$400',
+            rank: 4,
+            question: 'How many legs does a spider have?',
+            answer: '8'
           },
           {
-            'title': '$500',
+            rank: 5,
+            question: 'The crocodile species is believed to have been around for how long? 2 million years or 200 million years?',
+            answer: '200 million years'
           }
         ]
       }

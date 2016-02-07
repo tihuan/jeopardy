@@ -29,4 +29,9 @@ export class MainController {
     this.toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
     this.classAnimation = '';
   }
+
+  convertToPrize(rank) {
+    console.log('hello');
+    return `$ ${100 * rank}`;
+  }
 }
