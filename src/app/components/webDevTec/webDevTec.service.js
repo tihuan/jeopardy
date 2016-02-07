@@ -56,6 +56,102 @@ export class WebDevTecService {
         'url': 'https://babeljs.io/',
         'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
         'logo': 'babel.png'
+      },
+      {
+        'title': 'ES6 (Babel formerly 6to5)',
+        'url': 'https://babeljs.io/',
+        'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
+        'logo': 'babel.png'
+      },
+      {
+        'title': 'ES6 (Babel formerly 6to5)',
+        'url': 'https://babeljs.io/',
+        'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
+        'logo': 'babel.png'
+      },
+      {
+        'title': 'ES6 (Babel formerly 6to5)',
+        'url': 'https://babeljs.io/',
+        'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
+        'logo': 'babel.png'
+      },
+      {
+        'title': 'ES6 (Babel formerly 6to5)',
+        'url': 'https://babeljs.io/',
+        'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
+        'logo': 'babel.png'
+      },
+      {
+        'title': 'ES6 (Babel formerly 6to5)',
+        'url': 'https://babeljs.io/',
+        'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
+        'logo': 'babel.png'
+      },
+      {
+        'title': 'ES6 (Babel formerly 6to5)',
+        'url': 'https://babeljs.io/',
+        'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
+        'logo': 'babel.png'
+      },
+      {
+        'title': 'ES6 (Babel formerly 6to5)',
+        'url': 'https://babeljs.io/',
+        'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
+        'logo': 'babel.png'
+      },
+      {
+        'title': 'ES6 (Babel formerly 6to5)',
+        'url': 'https://babeljs.io/',
+        'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
+        'logo': 'babel.png'
+      },
+      {
+        'title': 'ES6 (Babel formerly 6to5)',
+        'url': 'https://babeljs.io/',
+        'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
+        'logo': 'babel.png'
+      },
+      {
+        'title': 'ES6 (Babel formerly 6to5)',
+        'url': 'https://babeljs.io/',
+        'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
+        'logo': 'babel.png'
+      },
+      {
+        'title': 'ES6 (Babel formerly 6to5)',
+        'url': 'https://babeljs.io/',
+        'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
+        'logo': 'babel.png'
+      },
+      {
+        'title': 'ES6 (Babel formerly 6to5)',
+        'url': 'https://babeljs.io/',
+        'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
+        'logo': 'babel.png'
+      },
+      {
+        'title': 'ES6 (Babel formerly 6to5)',
+        'url': 'https://babeljs.io/',
+        'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
+        'logo': 'babel.png'
+      },
+      {
+        'title': 'ES6 (Babel formerly 6to5)',
+        'url': 'https://babeljs.io/',
+        'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
+        'logo': 'babel.png'
+      },
+      {
+        'title': 'ES6 (Babel formerly 6to5)',
+        'url': 'https://babeljs.io/',
+        'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
+        'logo': 'babel.png'
+      },
+      {
+        'title': 'ES6 (Babel formerly 6to5)',
+        'url': 'https://babeljs.io/',
+        'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
+        'logo': 'babel.png'
       }
     ];
   }
