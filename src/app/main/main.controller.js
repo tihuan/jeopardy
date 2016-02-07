@@ -31,7 +31,6 @@ export class MainController {
   }
 
   convertToPrize(rank) {
-    console.log('hello');
-    return `$ ${100 * rank}`;
+    return `$${100 * rank}`;
   }
 }
