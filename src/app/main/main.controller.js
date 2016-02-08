@@ -25,11 +25,6 @@ export class MainController {
     });
   }
 
-  showToastr() {
-    this.toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-    this.classAnimation = '';
-  }
-
   convertToPrize(rank) {
     return `$${100 * rank}`;
   }

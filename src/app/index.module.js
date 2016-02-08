@@ -8,6 +8,7 @@ import { GithubContributorService } from '../app/components/githubContributor/gi
 import { WebDevTecService } from '../app/components/webDevTec/webDevTec.service';
 import { NavbarDirective } from '../app/components/navbar/navbar.directive';
 import { MalarkeyDirective } from '../app/components/malarkey/malarkey.directive';
+import { QuestionBoardDirective } from '../app/components/questionBoard/questionBoard.directive';
 
 angular.module('jeopardy', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ngNewRouter', 'ngMaterial', 'toastr'])
   .constant('malarkey', malarkey)
@@ -20,4 +21,5 @@ angular.module('jeopardy', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
   .controller('RouterController', RouterController)
   .controller('MainController', MainController)
   .directive('acmeNavbar', NavbarDirective)
-  .directive('acmeMalarkey', MalarkeyDirective);
+  .directive('acmeMalarkey', MalarkeyDirective)
+  .directive('spcaQuestionBoard', QuestionBoardDirective);
