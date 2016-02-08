@@ -5,7 +5,7 @@ import { routerConfig, RouterController } from './index.route';
 import { runBlock } from './index.run';
 import { MainController } from './main/main.controller';
 import { GithubContributorService } from '../app/components/githubContributor/githubContributor.service';
-import { QuestionService } from '../app/components/question/question.service';
+import { QuestionBoardService } from '../app/components/questionBoard/questionBoard.service';
 import { NavbarDirective } from '../app/components/navbar/navbar.directive';
 import { MalarkeyDirective } from '../app/components/malarkey/malarkey.directive';
 import { QuestionBoardDirective } from '../app/components/questionBoard/questionBoard.directive';
@@ -17,7 +17,7 @@ angular.module('jeopardy', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
   .config(routerConfig)
   .run(runBlock)
   .service('githubContributor', GithubContributorService)
-  .service('questionService', QuestionService)
+  .service('questionBoardService', QuestionBoardService)
   .controller('RouterController', RouterController)
   .controller('MainController', MainController)
   .directive('acmeNavbar', NavbarDirective)

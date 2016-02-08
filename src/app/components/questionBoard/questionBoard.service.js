@@ -1,10 +1,10 @@
-export class QuestionService {
+export class QuestionBoardService {
   constructor () {
     'ngInject';
 
     this.data = [
       {
-        category: 'Animal',
+        name: 'Animal',
         questions: [
           {
             rank: 1,
@@ -34,7 +34,7 @@ export class QuestionService {
         ]
       },
       {
-        category: 'SPCA',
+        name: 'SPCA',
         questions: [
           {
             rank: 1,
@@ -64,7 +64,7 @@ export class QuestionService {
         ]
       },
       {
-        category: 'More Animals',
+        name: 'More Animals',
         questions: [
           {
             rank: 1,
@@ -94,7 +94,7 @@ export class QuestionService {
         ]
       },
       {
-        category: 'Lots of animals',
+        name: 'Lots of animals',
         questions: [
           {
             rank: 1,
@@ -124,7 +124,7 @@ export class QuestionService {
         ]
       },
       {
-        category: 'ALLL the animals',
+        name: 'ALLL the animals',
         questions: [
           {
             rank: 1,
@@ -156,7 +156,7 @@ export class QuestionService {
     ];
   }
 
-  getQuestions() {
+  getQuestionBoard() {
     return this.data;
   }
 }

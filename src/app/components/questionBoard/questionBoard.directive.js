@@ -1,4 +1,4 @@
-export function QuestionBoardDirective() {
+export function QuestionBoardDirective(questionBoardService) {
   'ngInject';
 
   let directive = {
@@ -10,7 +10,7 @@ export function QuestionBoardDirective() {
         layout="row"
       >
         <div
-          ng-repeat="awesomeThing in main.awesomeThings"
+          ng-repeat="category in questionBoard"
           layout="column"
           flex="20"
         >
@@ -23,14 +23,14 @@ export function QuestionBoardDirective() {
                 layout="column"
                 layout-align="center center"
               >
-                {{awesomeThing.category}}
+                {{category.name}}
               </h3>
             </md-card-content>
           </md-card>
 
           <md-card
             class="question-card"
-            ng-repeat="question in awesomeThing.questions"
+            ng-repeat="question in category.questions"
           >
             <md-card-content>
               <h3
@@ -51,6 +51,7 @@ export function QuestionBoardDirective() {
   return directive;
 
   function linkFunc(scope, el, attr) {
+    scope.questionBoard = questionBoardService.getQuestionBoard();
     console.log('SPCA!!');
   }
 }
