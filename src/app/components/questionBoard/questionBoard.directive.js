@@ -38,7 +38,7 @@ export function QuestionBoardDirective(questionBoardService) {
                 layout="row"
                 layout-align="center center"
               >
-                {{ main.convertToPrize(question.rank) }}
+                {{ convertToPrize(question.rank) }}
               </h3>
             </md-card-content>
           </md-card>
@@ -52,6 +52,12 @@ export function QuestionBoardDirective(questionBoardService) {
 
   function linkFunc(scope, el, attr) {
     scope.questionBoard = questionBoardService.getQuestionBoard();
+    scope.convertToPrize = convertToPrize;
     console.log('SPCA!!');
+
+    function convertToPrize(rank) {
+      return `$${100 * rank}`;
+    }
+
   }
 }
