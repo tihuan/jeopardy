@@ -13,10 +13,6 @@
           "module": "ngCookies"
         },
         {
-          "key": "touch",
-          "module": "ngTouch"
-        },
-        {
           "key": "sanitize",
           "module": "ngSanitize"
         },

@@ -45,7 +45,7 @@ export function QuestionBoardDirective(questionBoardService) {
         </div>
       </div>
     `,
-    link: linkFunc,
+    link: linkFunc
   };
 
   return directive;
@@ -58,6 +58,5 @@ export function QuestionBoardDirective(questionBoardService) {
     function convertToPrize(rank) {
       return `$${100 * rank}`;
     }
-
   }
 }
