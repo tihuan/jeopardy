@@ -11,7 +11,8 @@ import { QuestionService } from '../app/components/question/question.service';
 import { NavbarDirective } from '../app/components/navbar/navbar.directive';
 import { MalarkeyDirective } from '../app/components/malarkey/malarkey.directive';
 import { QuestionDirective } from '../app/components/question/question.directive';
-import { QuestionBoardDirective } from '../app/components/questionBoard/questionBoard.directive';
+import { QuestionBoardController } from '../app/components/questionBoard/questionBoard.controller';
+import { QuestionBoardComponent } from '../app/components/questionBoard/questionBoard.component';
 
 angular.module('jeopardy', ['ngAnimate', 'ngCookies', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ngNewRouter', 'ngMaterial', 'toastr'])
   .constant('malarkey', malarkey)
@@ -20,12 +21,13 @@ angular.module('jeopardy', ['ngAnimate', 'ngCookies', 'ngSanitize', 'ngMessages'
   .config(routerConfig)
   .run(runBlock)
   .service('githubContributor', GithubContributorService)
-  .service('questionBoardService', QuestionBoardService)
   .service('categoryService', CategoryService)
-  .service('questionService', QuestionService)
   .controller('RouterController', RouterController)
   .controller('MainController', MainController)
   .directive('acmeNavbar', NavbarDirective)
   .directive('acmeMalarkey', MalarkeyDirective)
+  .service('questionService', QuestionService)
   .directive('spcaQuestion', QuestionDirective)
-  .directive('spcaQuestionBoard', QuestionBoardDirective);
+  .service('questionBoardService', QuestionBoardService)
+  .controller('questionBoardController', QuestionBoardController)
+  .component('spcaQuestionBoard', QuestionBoardComponent);

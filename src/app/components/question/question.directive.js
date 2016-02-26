@@ -37,7 +37,6 @@ export function QuestionDirective() {
     scope.showQuestion = false
     scope.convertToPrize = convertToPrize;
     scope.toggleQuestion = toggleQuestion
-    console.log('question!!');
 
     function convertToPrize(rank) {
       return `$${100 * rank}`;
