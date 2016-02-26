@@ -8,27 +8,27 @@ export class QuestionBoardService {
         questions: [
           {
             rank: 1,
-            question: 'An animal starts with C and rhymes with ow',
+            question: 'An animal starts with C and rhymes with "ow"',
             answer: 'Cow'
           },
           {
             rank: 2,
-            question: 'An animal starts with C and rhymes with at',
+            question: 'An animal starts with C and rhymes with "at"',
             answer: 'Cat'
           },
           {
             rank: 3,
-            question: 'An animal starts with D and rhymes with og',
+            question: 'An animal starts with D and rhymes with "og"',
             answer: 'Dog'
           },
           {
             rank: 4,
-            question: 'An animal starts with E and ends with agle',
+            question: 'An animal starts with E and ends with "agle"',
             answer: 'Eagle!!'
           },
           {
             rank: 5,
-            question: 'An animal starts with F and ends with ly',
+            question: 'An animal starts with F and ends with "ly"',
             answer: 'Fly'
           }
         ]

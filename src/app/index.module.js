@@ -10,6 +10,7 @@ import { CategoryService } from '../app/components/category/category.service';
 import { QuestionService } from '../app/components/question/question.service';
 import { NavbarDirective } from '../app/components/navbar/navbar.directive';
 import { MalarkeyDirective } from '../app/components/malarkey/malarkey.directive';
+import { QuestionDirective } from '../app/components/question/question.directive';
 import { QuestionBoardDirective } from '../app/components/questionBoard/questionBoard.directive';
 
 angular.module('jeopardy', ['ngAnimate', 'ngCookies', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ngNewRouter', 'ngMaterial', 'toastr'])
@@ -26,4 +27,5 @@ angular.module('jeopardy', ['ngAnimate', 'ngCookies', 'ngSanitize', 'ngMessages'
   .controller('MainController', MainController)
   .directive('acmeNavbar', NavbarDirective)
   .directive('acmeMalarkey', MalarkeyDirective)
+  .directive('spcaQuestion', QuestionDirective)
   .directive('spcaQuestionBoard', QuestionBoardDirective);

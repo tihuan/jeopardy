@@ -28,20 +28,11 @@ export function QuestionBoardDirective(questionBoardService) {
             </md-card-content>
           </md-card>
 
-          <md-card
-            class="question-card"
+          <spca-question
             ng-repeat="question in category.questions"
+            question="question"
           >
-            <md-card-content>
-              <h3
-                class="md-title"
-                layout="row"
-                layout-align="center center"
-              >
-                {{ convertToPrize(question.rank) }}
-              </h3>
-            </md-card-content>
-          </md-card>
+          </spca-question>
         </div>
       </div>
     `,
@@ -51,12 +42,18 @@ export function QuestionBoardDirective(questionBoardService) {
   return directive;
 
   function linkFunc(scope, el, attr) {
+    scope.showQuestion = false
     scope.questionBoard = questionBoardService.getQuestionBoard();
     scope.convertToPrize = convertToPrize;
+    scope.toggleQuestion = toggleQuestion
     console.log('SPCA!!');
 
     function convertToPrize(rank) {
       return `$${100 * rank}`;
+    }
+
+    function toggleQuestion(question) {
+      scope.showQuestion = !scope.showQuestion;
     }
   }
 }
