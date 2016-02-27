@@ -2,6 +2,7 @@ export let QuestionBoardComponent = {
   controller: 'questionBoardController',
   template: `
     <div
+      id="popupContainer"
       layout="row"
     >
       <div
