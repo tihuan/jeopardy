@@ -1,4 +1,5 @@
 export let QuestionBoardComponent = {
+  controller: 'questionBoardController',
   template: `
     <div
       layout="row"
@@ -29,6 +30,5 @@ export let QuestionBoardComponent = {
         </spca-question>
       </div>
     </div>
-  `,
-  controller: 'questionBoardController'
+  `
 };
