@@ -3,7 +3,8 @@ export class QuestionController {
     'ngInject';
 
     this.showQuestion = false;
-    this.showAlert = questionDialogService.showAlert;
+    this.result = questionDialogService.result;
+    this.showDialog = questionDialogService.showDialog;
   }
 
   convertToPrize() {

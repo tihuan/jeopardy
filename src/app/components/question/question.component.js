@@ -6,7 +6,7 @@ export let QuestionComponent = {
   template: `
     <md-card
       class="question-card"
-      ng-click="$ctrl.showAlert()"
+      ng-click="$ctrl.showDialog()"
     >
       <md-card-content>
         <h3
