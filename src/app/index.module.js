@@ -8,6 +8,7 @@ import { GithubContributorService } from '../app/components/githubContributor/gi
 import { CategoryService } from '../app/components/category/category.service';
 import { NavbarDirective } from '../app/components/navbar/navbar.directive';
 import { MalarkeyDirective } from '../app/components/malarkey/malarkey.directive';
+import { QuestionDialogService } from '../app/components/questionDialog/questionDialog.service';
 import { QuestionService } from '../app/components/question/question.service';
 import { QuestionComponent } from '../app/components/question/question.component';
 import { QuestionController } from '../app/components/question/question.controller';
@@ -26,6 +27,7 @@ angular.module('jeopardy', ['ngAnimate', 'ngCookies', 'ngSanitize', 'ngMessages'
   .controller('RouterController', RouterController)
   .directive('acmeNavbar', NavbarDirective)
   .directive('acmeMalarkey', MalarkeyDirective)
+  .service('questionDialogService', QuestionDialogService)
   .service('questionService', QuestionService)
   .component('spcaQuestion', QuestionComponent)
   .controller('questionController', QuestionController)
