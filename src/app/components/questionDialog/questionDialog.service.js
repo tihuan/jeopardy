@@ -6,15 +6,19 @@ export class QuestionDialogService {
     this.showDialog = this._setShowDialog($mdDialog, this.result);
   }
 
-  _setShowDialog($mdDialog, question, result) {
-    return function showDialog(ev) {
+  _setShowDialog($mdDialog, result) {
+    let service = this;
+    return function showDialog(ev, question) {
+      console.log('ev', ev);
+      console.log('question', question);
+      console.log('service._DialogController', service._DialogController);
       $mdDialog.show({
-        controller: this._DialogController,
+        controller: service._DialogController,
         template:`
-          <div>{{ $ctrl.question }}</div>
-          <div ng-click="$ctrl.cancel()">cancel</div>
-          <div ng-click="$ctrl.answer('not useful')">Not Useful</div>
-          <div ng-click="$ctrl.answer('useful')">Useful</div>
+          <div>${question}</div>
+          <div ng-click="cancel()">cancel</div>
+          <div ng-click="answer('not useful')">Not Useful</div>
+          <div ng-click="answer('useful')">Useful</div>
         `,
         fullScreen: true,
         clickOutsideToClose: true,
@@ -31,18 +35,23 @@ export class QuestionDialogService {
     };
   };
 
-  _DialogController($mdDialog) {
+  _DialogController($scope, $mdDialog) {
     'ngInject';
 
-    this.hide = hide;
-    this.cancel = cancel;
-    this.answer = answer;
+    console.log('_DialogController!!');
+    console.log('$scope', $scope);
+
+    $scope.hide = hide;
+    $scope.cancel = cancel;
+    $scope.answer = answer;
 
     function hide() {
+      console.log('hide');
       $mdDialog.hide();
     }
 
     function cancel() {
+      console.log('cancel');
       $mdDialog.cancel();
     }
 
